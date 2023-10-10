@@ -1,0 +1,532 @@
+    1  exit
+    2  ls
+    3  pwd
+    4  sudo apt-get update
+    5  sudo apt-get install -y ca-certificates curl gnupg
+    6  sudo mkdir -p /etc/apt/keyrings
+    7  curl -fsSL https://deb.nodesource.com/gpgkey/nodesource-repo.gpg.key | sudo gpg --dearmor -o /etc/apt/keyrings/nodesource.gpg
+    8  NODE_MAJOR=20
+    9  echo "deb [signed-by=/etc/apt/keyrings/nodesource.gpg] https://deb.nodesource.com/node_$NODE_MAJOR.x nodistro main" | sudo tee /etc/apt/sources.list.d/nodesource.list
+   10  sudo apt-get update
+   11  sudo apt-get install nodejs -y
+   12  node --version
+   13  mkdir ~/graphbook
+   14  cd ~/graphbook
+   15  npm init
+   16  history
+   17  mkdir public
+   18  cd public
+   19  vi index.html
+   20  cd ..
+   21  npm install --save react react-dom
+   22  npm install --save-dev @babel/core babel-loader @babel/preset-env @babel/preset-react clean-webpack-plugin css-loader file-loader html-webpack-plugin style-loader url-loader webpack webpack-cli webpack-dev-server
+   23  ls
+   24  vi webpack.client.config.js
+   25  vi .babelrc
+   26  vi package.json
+   27  mkdir -p src/client
+   28  cd src/client
+   29  touch index.js
+   30  vi index.js
+   31  vi App.js
+   32  cd ..
+   33  npm run client
+   34  ls
+   35  pwd
+   36  sudo yum install git -y  # For Amazon Linux, CentOS, RHEL
+   37  sudo apt-get install git -y  # For Ubuntu, Debian
+   38  git config --global user.name "Natasha Douglas"
+   39  git config --global user.email "natasha.douglas@gmail.com"
+   40  cd ~
+   41  git clone https://github.com/natashadouglas/CIS-419-Graphbook.git
+   42  ls
+   43  cd CIS-419-Graphbook/
+   44  mkdir Assignment_1_HelloReactjs
+   45  cp -r ~/graphbook/ Assignment_1_HelloReactjs/
+   46  cd Assignment_1_HelloReactjs/
+   47  ls
+   48  cd ..
+   49  ls
+   50  git add Assignment_1_HelloReactjs/
+   51  git commit 
+   52  git commit -am "commiting Assignment 1"
+   53  git push
+   54  cd ..
+   55  ls
+   56  rm -r CIS-419-Graphbook/
+   57  rm -rf CIS-419-Graphbook/
+   58  ls
+   59  git clone git@github.com:natashadouglas/CIS-419-Graphbook.git
+   60  ssh-keygen -t rsa -b 4096 -C "natasha.douglas@gmail.com"
+   61  eval "$(ssh-agent -s)"
+   62  ssh-add ~/.ssh/id_rsa
+   63  cat ~/.ssh/id_rsa.pub
+   64  git clone git@github.com:natashadouglas/CIS-419-Graphbook.git
+   65  cd CIS-419-Graphbook/
+   66  ls
+   67  mkdir Assignment_1_HelloReact_js
+   68  cp -r ~/graphbook/ Assignment_1_HelloReact_js/
+   69  git add Assignment_1_HelloReact_js/
+   70  git commit -am "commiting Assignment 1"
+   71  git push
+   72  cd ~/graphbook/
+   73  ls
+   74  vi webpack.client.config.js 
+   75  cd public
+   76  ls
+   77  mkdir uploads
+   78  cd uploads
+   79  ls
+   80  cd ..
+   81  ls
+   82  mkdir assets
+   83  cd assets
+   84  ls
+   85  mkdir css
+   86  vi style.css
+   87  npm install --save file-loader url-loader
+   88  npm install --save style-loader css-loader
+   89  sudo npm install --save react-helmet
+   90  cd ..
+   91  cd src/client
+   92  ls
+   93  cd graphbook
+   94  ls
+   95  cd assets
+   96  ls
+   97  cd css
+   98  ls
+   99  cd ..
+  100  ls
+  101  mv style.css css
+  102  ls
+  103  cd ..
+  104  ls
+  105  cd src
+  106  ls
+  107  cd client
+  108  ls
+  109  rm App.js
+  110  vi App.js
+  111  cd ..
+  112  ls
+  113  vi webpack.client.config.js 
+  114  npm run client
+  115  ls
+  116  cd src
+  117  cd client
+  118  ls
+  119  vi App.js 
+  120  npm run client
+  121  cd
+  122  ls
+  123  cd CIS-419-Graphbook/
+  124  ls
+  125  mkdir Assignment_2_Custom_Newsfeed
+  126  cp -r ~/graphbook/ Assignment_2_Custom_Newsfeed/
+  127  git add Assignment_2_Custom_Newsfeed/
+  128  git commit -am "commiting Assignment 2"
+  129  git push
+  130  ls
+  131  git clone git@github.com:PacktPublishing/Full-Stack-Web-Development-with-GraphQL-and-React-Second-Edition.git
+  132  ls
+  133  cd graphbook/
+  134  ls
+  135  npm install --save express
+  136  ls
+  137  mkdir src/server
+  138  cd src
+  139  ls
+  140  cd ..
+  141  ls
+  142  vi webpack.client.config.js 
+  143  exit
+  144  cd graphbook/
+  145  ls
+  146  vi webpack.client.config.js 
+  147  cd src/server
+  148  vi index.js
+  149  cd ..
+  150  npm run server
+  151  npm install --save nodemon
+  152  npm install --save-dev  @babel/node
+  153  npm run server
+  154  ls
+  155  cd src
+  156  ls
+  157  cd server
+  158  ls
+  159  cd
+  160  cd graphbook/
+  161  ls
+  162  vi package
+  163  vi package.json
+  164  vi package.json
+  165  npm run server
+  166  cd src
+  167  ls
+  168  cd server
+  169  ls
+  170  vi index.js 
+  171  cd
+  172  ls
+  173  cd CIS-419-Graphbook/
+  174  ls
+  175  mkdir Assignment_3_Express_js
+  176  cp -r ~/graphbook/ Assignment_3_Express_js/
+  177  git add Assignment_3_Express_js/
+  178  git commit -am "committing assignment 3"
+  179  git push
+  180  npm install --save compression cors helmet
+  181  npm install --save apollo-server-express graphql @graphql-tools/schema
+  182  cd
+  183  ls
+  184  cd graphbook/
+  185  ls
+  186  mkdir src/server/services/
+  187  cd src
+  188  server
+  189  cd server
+  190  cd services
+  191  vi index.js
+  192  cd ..
+  193  ls
+  194  rm index.js
+  195  mv services/index.js ./
+  196  ls
+  197  cd
+  198  cd graphbook/
+  199  mkdir src/server/services/graphql
+  200  cd src/server/services/graphql
+  201  vi index.js
+  202  cd
+  203  cd graphbook/
+  204  npm run server
+  205  logout
+  206  cd graphbook/
+  207  ls
+  208  npm run server
+  209  restart
+  210  ls
+  211  vi package.json 
+  212  cd src/server/
+  213  ls
+  214  vi index.js 
+  215  exit
+  216  cd graphbook/
+  217  ls
+  218  vi webpack.client.config.js 
+  219  npm run server
+  220  npm install --save compression cors helmet
+  221  npm install --save apollo-server-express graphql @graphql-tools/schema
+  222  cd
+  223  cd graphbook/
+  224  cd src
+  225  cd server
+  226  ls
+  227  vi index.js 
+  228  cd ..
+  229  npm install --save compression cors helmet
+  230  npm install --save apollo-server-express graphql @graphql-tools/schema
+  231  mkdir src/server/services/
+  232  cd src/server/
+  233  vi index.js
+  234  cd ..
+  235  ls
+  236  vi package.json 
+  237  vi package-lock.json 
+  238  npm run server
+  239  npm update
+  240  npm run server
+  241  cd src
+  242  ls
+  243  cd server
+  244  ls
+  245  cd services
+  246  ls
+  247  vi index.js
+  248  cd ..
+  249  npm run server
+  250  npm install --save compression cors helmet
+  251  cd ..
+  252  ls
+  253  cd graphbook/
+  254  ls
+  255  cd src
+  256  ls
+  257  cd server
+  258  ls
+  259  cd ..
+  260  cd..
+  261  cd ..
+  262  npm install --save apollo-server-express graphql
+  263  @graphql-tools/schema
+  264  npm install --save apollo-server-express graphql @graphql-tools/schema
+  265  npm install --save compression cors helmet
+  266  npm run server
+  267  [200~npm install --save compression cors helmet~
+  268  npm install --save compression cors helmet
+  269  cd src
+  270  cd server
+  271  vi index.js 
+  272  cd ..
+  273  npm run server
+  274  cd src
+  275  ls
+  276  cd server/
+  277  ls
+  278  rm -rf *
+  279  ls
+  280  exit
+  281  cd graphbook/
+  282  npm uninstall compression cors helmet
+  283  npm uninstall core
+  284  npm uninstall cors
+  285  npm uninstall helmet
+  286  npm uninstall apollo-server-express graphql @graphql-tools/schema 
+  287  vi webpack.client.config.js 
+  288  cd
+  289  ls
+  290  cd Full-Stack-Web-Development-with-GraphQL-and-React-Second-Edition/
+  291  ls
+  292  cd Chapter02
+  293  ls
+  294  npm run server
+  295  npm install --save compression cors helmet
+  296  npm audit fix
+  297  npm install --save apollo-server-express graphql @graphql-tools/schema
+  298  npm audit fix --force
+  299  npm run server
+  300  which nano
+  301  ls
+  302  cd graphbook/
+  303  ls
+  304  nano webpack.client.config.js 
+  305  ls
+  306  nodemon --exec babel-node --watch src/server src/server/index.js
+  307  graphbook@1.0.0 server
+  308  npm run server
+  309  npm install --save compression cors helmet
+  310  npm install --save apollo-server-express graphql @graphql-tools/schema
+  311  npm run server
+  312  ls
+  313  cd src
+  314  ls
+  315  mkdir helpers
+  316  cd helpers/
+  317  ls
+  318  vi logger.js
+  319  cd ..
+  320  npm run server
+  321  ls
+  322  vi package.json 
+  323  vi webpack.client.config.js 
+  324  ls
+  325  cd src/
+  326  ls
+  327  cd server/
+  328  ls
+  329  vi index.js 
+  330  cd services/graphql/
+  331  ls
+  332  vi resolvers.js 
+  333  cd ..
+  334  ls
+  335  cd ..
+  336  ls
+  337  mv helpers server/helpers
+  338  cd server/
+  339  ls
+  340  cd ..
+  341  ls
+  342  cd ..
+  343  ls
+  344  npm run server
+  345  npm install winston
+  346  npm run server
+  347  ls
+  348  cd graphbook/
+  349  ls
+  350  sudo apt-get update && sudo apt-get update -y
+  351  sudo apt-get install apache2 mysql-server php-pear php php-mysql
+  352  ls
+  353  nana webpack.client.config.js 
+  354  nano webpack.client.config.js 
+  355  sudo mysql
+  356  sudo apt-get install phpmyadmin
+  357  cd /etc/apache2
+  358  ls
+  359  sudo nano apache2.conf
+  360  sudo service apache2 restart
+  361  history
+  362  sudo mysql -u root -p
+  363  sudo apt-get install phpmyadmin
+  364  ls
+  365  sudo nano apache2.conf
+  366  sudo service apache2 restart
+  367  cd ..
+  368  cd
+  369  cd graphbook/
+  370  ls
+  371  npm install --save sequelize mysql2
+  372  cd src/server
+  373  mkdir database
+  374  cd database
+  375  nano index.js
+  376  cd ../..
+  377  cd server
+  378  ls
+  379  mkdir config
+  380  cd config
+  381  nano index.js
+  382  cd graphbook/
+  383  ls
+  384  sudo npm install -g sequelize-cli
+  385  sequelize model:generate --models-path 
+  386  src/server/model s  --migrations-path src/server/migrations --name Post --attributes text:text
+  387  sequelize model:generate --models-path 
+  388  src/server/models  --migrations-path src/server/migrations --name Post --attributes text:text
+  389  sequelize model:generate --mode
+  390  sequelize model:generate --models-path src/server/models  --migrations-path src/server/migrations --name Post --attributes text:text
+  391  cd ..
+  392  ls
+  393  cd graphbook
+  394  cd src
+  395  cd server/
+  396  cd migrations
+  397  ls
+  398  cd ..
+  399  cd models
+  400  cat post.js
+  401  cd ..
+  402  cd ../..
+  403  sequelize db:migrate --migrations-path src/server/migrations --config src/server/config/index.js
+  404  cd graphbook/
+  405  cd ..
+  406  ls
+  407  cd../..
+  408  ls
+  409  cd src
+  410  cd graphbook/
+  411  ls
+  412  cd src
+  413  cd server
+  414  cd models
+  415  ls
+  416  nano index.js
+  417  cd ../..
+  418  cd ..
+  419  source.env
+  420  source .env
+  421  nano .env
+  422  source .env
+  423  echo $NODE_ENV
+  424  npm install --save-dev babel-plugin-require-context-hook
+  425  nano package.json
+  426  cd src
+  427  cd server
+  428  nano index.js 
+  429  cd ..
+  430  sequelize seed:generate --name fake-posts --seeders-path src/server/seeders
+  431  ls
+  432  cd ..
+  433  cd graphbook/
+  434  cd src
+  435  cd server/
+  436  cd seeders/
+  437  ls
+  438  nano [200~sequelize seed:generate --name fake-posts --seeders-pat
+  439  nano 20231009084118-fake-posts.js
+  440  cd ../..
+  441  cd ..
+  442  sequelize db:seed:all --seeders-path src/server/seeders --config src/server/config/index.js
+  443  cd ../..
+  444  cd graphbook
+  445  cd ..
+  446  ls
+  447  cd
+  448  cd graphbook/
+  449  cd src
+  450  cd server/
+  451  cd models/
+  452  nano post.js
+  453  nano user.js
+  454  cd ../..
+  455  cd ..
+  456  sequelize seed:generate --name fake-users --seeders-path src/server/seeders
+  457  cd
+  458  cd graphbook/
+  459  cd src
+  460  cd server/
+  461  cd seeders/
+  462  ls
+  463  nano 20231009102153-fake-users.js 
+  464  cd ../..
+  465  cd ..
+  466  sequelize db:seed:undo:all --seeders-path src/server/seeders --config src/server/config/index.js
+  467  sequelize seed:generate --name fake-users --seeders-path src/server/seeders
+  468  sequelize db:seed:all --seeders-path src/server/seeders --config src/server/config/index.js
+  469  cd graphbook/
+  470  cd src
+  471  cd server/
+  472  cd models/
+  473  nano index.js
+  474  cd ../..
+  475  cd ..
+  476  sudo apt-get update && sudo apt-get update -y
+  477  sudo apt-get install apache2 mysql-server php-pear php-mysql
+  478  mysql_secure_installation
+  479  sudo mysql_secure_installation
+  480  sudo mysql
+  481  sudo mysql_secure_installation
+  482  mysql
+  483  sudo mysql -u root -p
+  484  history
+  485  history | grep mysql2
+  486  cd ../..
+  487  cd g
+  488  ls
+  489  cd graphbook
+  490  cd
+  491  cd graphbook/
+  492  cd ..
+  493  cd graphbook/
+  494  cd src
+  495  cd server
+  496  cd models/
+  497  ls
+  498  cat user.js
+  499  cd ..
+  500  cd seeders
+  501  ls
+  502  rm 2023100910*
+  503  ls
+  504  sequelize seed:generate --name fake-users --seeders-path src/server/seeders
+  505  ls
+  506  rm -r src
+  507  cd ..
+  508  cd ../..
+  509  sequelize seed:generate --name fake-users --seeders-path src/server/seeders
+  510  ls
+  511  cd src
+  512  cd server/
+  513  cd seeders/
+  514  ls
+  515  rm -r *44
+  516  rm 20231010010144-fake-users.js 
+  517  ls
+  518  nano 20231010010201-fake-users.js 
+  519  sudo mysql -u root -p
+  520  cd 
+  521  cd CIS-419-Graphbook/
+  522  ls
+  523  mkdir Assignment_5_Database_Administration
+  524  cp -r ~/graphbook/ Assignment_5_Database_Administration/
+  525  git add Assignment_5_Database_Administration/
+  526  git commit -am "Committing Assignment 5"
+  527  git push
+  528  cd
+  529  cat ~/.mysql_history > mysql_history_output.txt
+  530  ls -a
+  531  history > database_admin.txt~
+  532  history > database_admin.txt
